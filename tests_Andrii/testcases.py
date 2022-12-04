@@ -95,8 +95,7 @@ class filter(testRozetka):
 
 
 class productPage(testRozetka):
-
-    """ check if the user can successfully check out any product on “Ноутбуки” page """
+    """ Check if the user can successfully check out any product on “Ноутбуки” page """
     def test_product_page(self):
         self.driver.get("https://rozetka.com.ua/ua/notebooks/c80004/")
 
@@ -131,6 +130,7 @@ class productPage(testRozetka):
 
         # Click “Відео” button to view video(s) of the laptop
         clickBtn(self.driver, '/html/body/app-root/div/div/rz-product/div/rz-product-navbar/rz-tabs/div/div/ul/li[6]/a')
+
 
 class comparison(testRozetka):
     """ check if the user can successfully add any desired product on “Ноутбуки” """
